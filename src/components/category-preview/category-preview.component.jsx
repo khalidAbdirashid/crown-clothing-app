@@ -1,14 +1,16 @@
 /* eslint-disable react/prop-types */
 import ProductCard from "../productcard/productcard.component";
 import { Link } from "react-router-dom";
-import { CategoryPreviewContainer, Preview, Title } from "./category-preview.styles";
+import {
+  CategoryPreviewContainer,
+  Preview,
+  Title,
+} from "./category-preview.styles";
 const CategoryPreview = ({ title, products }) => {
   return (
     <CategoryPreviewContainer>
       <Title>
-        <Link className="title" to={title}>
-          {title.toUpperCase()}
-        </Link>
+        <Link to={title}>{title.toUpperCase()}</Link>
       </Title>
       <Preview>
         {products
