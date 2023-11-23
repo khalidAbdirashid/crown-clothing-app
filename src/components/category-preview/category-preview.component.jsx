@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import ProductCard from "../productcard/productcard.component";
-import { Link } from "react-router-dom";
 import {
   CategoryPreviewContainer,
   Preview,
